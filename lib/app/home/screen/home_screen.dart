@@ -42,9 +42,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           'Atividades',
                           style: GoogleFonts.poppins(
                             textStyle: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w500,
-                                color: Theme.of(context).highlightColor),
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                              color: Theme.of(context).highlightColor,
+                            ),
                           ),
                         ),
                         Text(
@@ -53,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             textStyle: TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w300,
-                                color: Theme.of(context).highlightColor),
+                                color: Theme.of(context).highlightColor,),
                           ),
                         ),
                       ],
