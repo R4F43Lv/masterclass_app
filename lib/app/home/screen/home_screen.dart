@@ -1,4 +1,6 @@
 import 'package:app_masterclass/app/profile/widgets/card_profile.dart';
+import 'package:app_masterclass/app/profile/widgets/skills_graphic.dart';
+import 'package:app_masterclass/app/profile/widgets/technologies_list.dart';
 import 'package:app_masterclass/app/shared/theme/theme.dart';
 import 'package:app_masterclass/app/shared/widgets/custom_appbar.dart';
 import 'package:app_masterclass/app/shared/widgets/custom_bottom_appbar.dart';
@@ -17,27 +19,31 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     ChangeTheme changeTheme = Provider.of<ChangeTheme>(context);
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(left: 14, right: 14),
-        child: Column(
-          children: [
-            CustomAppBar(
-              title: 'Atividades',
-              subtitle: 'Flutterando MasterClass',
-              inkChangeTheme: InkWell(
-                onTap: () {
-                  changeTheme.notifyTheme();
-                },
-                child: Image.asset(
-                  'lib/assets/icons/moon.png',
-                  color: Theme.of(context).highlightColor,
-                  height: 24,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 14, right: 14),
+          child: Column(
+            children: [
+              CustomAppBar(
+                title: 'Atividades',
+                subtitle: 'Flutterando MasterClass',
+                inkChangeTheme: InkWell(
+                  onTap: () {
+                    changeTheme.notifyTheme();
+                  },
+                  child: Image.asset(
+                    'lib/assets/icons/moon.png',
+                    color: Theme.of(context).highlightColor,
+                    height: 24,
+                  ),
                 ),
               ),
-            ),
-            // const TasksScreen(),
-            const CardProfile(),
-          ],
+              // const TasksScreen(),
+              const CardProfile(),
+              const TechnologiesList(),
+              const GraphicSkills(),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: const CustomBottomAppBar(),

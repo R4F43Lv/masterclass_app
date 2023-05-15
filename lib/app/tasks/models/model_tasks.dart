@@ -4,7 +4,7 @@ class Tasks {
   final String? qtdExercicios;
   final String? descricao;
   final String? linkRepo;
-  final Function? child;
+  final List<Exercicios>? exercicios;
 
   Tasks({
     this.icon,
@@ -12,7 +12,19 @@ class Tasks {
     this.qtdExercicios,
     this.descricao,
     this.linkRepo,
-    this.child,
+    this.exercicios,
+  });
+}
+
+class Exercicios {
+  final String? id;
+  final String? name;
+  final String? router;
+
+  Exercicios({
+    this.id,
+    this.name,
+    this.router,
   });
 }
 
@@ -24,7 +36,7 @@ final List<Tasks> tasks = [
     descricao:
         'Estudos sobre animações implícitas e controladas, contendo 4 exercícios e 2 estudos',
     linkRepo: '',
-    child: () {},
+    exercicios: [],
   ),
   Tasks(
     icon: 'lib/assets/icons/glasses.png',
@@ -33,7 +45,7 @@ final List<Tasks> tasks = [
     descricao:
         'Aplicação da técnica de leitura de mockup, contendo 2 exercícios',
     linkRepo: '',
-    child: () {},
+    exercicios: [],
   ),
   Tasks(
     icon: 'lib/assets/icons/toys.png',
@@ -41,6 +53,6 @@ final List<Tasks> tasks = [
     qtdExercicios: '3',
     descricao: 'Ambiente destinado a testes e estudos em geral',
     linkRepo: '',
-    child: () {},
+    exercicios: [],
   ),
 ];
