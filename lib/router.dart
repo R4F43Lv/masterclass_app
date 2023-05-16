@@ -7,8 +7,7 @@ class RouterMasterClass {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => const SplashScreen());
-
-      case 'homescreen':
+      case '/homescreen':
         return MaterialPageRoute(builder: (_) => const HomeScreen());
 
       default:

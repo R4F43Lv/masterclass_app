@@ -24,7 +24,7 @@ class MyTheme {
 class ChangeTheme extends ChangeNotifier {
   bool isDark = true;
 
-  void notifyTheme(){
+  void notifyTheme() {
     isDark = !isDark;
     notifyListeners();
   }
