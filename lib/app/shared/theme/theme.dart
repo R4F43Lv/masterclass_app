@@ -9,6 +9,21 @@ class MyTheme {
     cardColor: const Color(0xff172026),
     scaffoldBackgroundColor: const Color(0xff121517),
     textTheme: GoogleFonts.poppinsTextTheme(),
+    splashColor: Colors.transparent,
+    // highlightColor: Colors.transparent,
+    // colorScheme: ColorScheme(
+    //   brightness: ,
+    //   primary: ,
+    //   onPrimary: ,
+    //   secondary: ,
+    //   onSecondary: ,
+    //   error: ,
+    //   onError: ,
+    //   background: ,
+    //   onBackground: ,
+    //   surface: ,
+    //   onSurface: ,
+    // ),
   );
 
   static final light = ThemeData(
@@ -18,6 +33,21 @@ class MyTheme {
     cardColor: const Color(0xffEDF4F8),
     scaffoldBackgroundColor: const Color(0xffD6DFE4),
     textTheme: GoogleFonts.poppinsTextTheme(),
+    splashColor: Colors.transparent,
+    // highlightColor: Colors.transparent,
+    // colorScheme: ColorScheme(
+    //   brightness: ,
+    //   primary: ,
+    //   onPrimary: ,
+    //   secondary: ,
+    //   onSecondary: ,
+    //   error: ,
+    //   onError: ,
+    //   background: ,
+    //   onBackground: ,
+    //   surface: ,
+    //   onSurface: ,
+    // ),
   );
 }
 
